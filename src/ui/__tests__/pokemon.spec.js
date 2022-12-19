@@ -38,14 +38,5 @@ describe("testea funcion mostrarPokemon",()=> {
 
     })
 
-    test("testea funciones mostrarTipos,mostrarHabilidades,mostrarMovimientos",()=> {
-        expect(document.querySelector("#tipos").childNodes).toHaveLength(2)
-        expect(document.querySelector("#habilidades").childNodes).toHaveLength(2)
-        expect(document.querySelectorAll("td")).toHaveLength(1)
-        expect(document.querySelectorAll("tr")).toHaveLength(2)
-
-
-
-    })
 
 })

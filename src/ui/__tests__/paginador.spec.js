@@ -55,13 +55,11 @@ describe("Prueba funcion paginador",()=> {
             .toEqual("Anterior");
         expect((document.querySelectorAll(".page-item"))[0].className)
             .toEqual("page-item disabled")
-            //[0] porque con 0 le pego a "Anterior"
     })
   
     test("creacion de paginas",()=> {
 
         expect(document.querySelectorAll(".page-item")).toHaveLength((Math.ceil(totalPokes/20))+2);
-        //porque son 58 con 20 por pagina, y sumo 2 de "anterior" y "siguiente"
         expect((document.querySelectorAll(".page-item"))[1].className)
             .toEqual("page-item active");
     })
